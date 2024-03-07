@@ -1,2 +1,3 @@
 # Programming
-Projetos desenvolvidos na LCI na UC "Informação para a Internet", onde desenvolvi alguns websites com a ajuda de HTML, CSS, JS. Desenvolvi ainda ficheiros XML e XSD desse mesmo projeto.
+Este é um projeto que foi criado em grupo para um curso sobre "informação para a Internet". Consistiu na criação de sítios Web utilizando as seguintes linguagens de programação: HTML, CSS, JS, XML, XSD, XSL. Podes ver algumas explicações sobre este projeto neste LINK: https://uporto-my.sharepoint.com/:p:/g/personal/up202009437_up_pt/Ee1Ll-rAdWxPnel_evu3MG4BMEnbPZaq_t12slgKWI7w1Q?e=0jx9IZ
+This is a project that was created as a group for a course on "information for the Internet". It consisted of creating websites using the following programming languages: HTML, CSS, JS, XML, XSD, XSL. You can see some explanations about it in this LINK: https://uporto-my.sharepoint.com/:p:/g/personal/up202009437_up_pt/Ee1Ll-rAdWxPnel_evu3MG4BMEnbPZaq_t12slgKWI7w1Q?e=0jx9IZ
