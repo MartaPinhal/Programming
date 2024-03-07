@@ -1,0 +1,1148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<animacao xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="animacao.xsd">
+
+    <!-- Começa página Festa de São João -->
+
+    <festividade nome="São João">
+        
+        <!-- Imagem inicial -->
+        
+        <imagem_festa>
+            <descricao>Festas de São João no Porto</descricao>
+            <fonte>https://www.agoraporto.pt/files/uploads/cms/agora/8/files/47/mno-balao-sao-joao.jpg</fonte>
+            <largura unidade="px">1160</largura>
+            <altura unidade="px">773</altura>
+        </imagem_festa>
+                
+        <!-- Texto utilizado: 
+            - Apesar de ser um dos santos populares mais celebrados por toda 
+            Europa, nenhuma cidade festeja o São João como o Porto, numa 
+            manifestação popular que arrasta multidões para a rua, contagiando 
+            cada um dos bairros e freguesias da cidade, entusiasmando todos 
+            quantos participam ou descricaoobrem pela primeira vez esta festa. 
+        
+            - Pelas suas características únicas e especiais, mas também pela cada 
+            vez maior qualidade e diversidade da sua programação, as Festas de 
+            São João são hoje um dos eventos âncora da cidade e uma marca já 
+            indissociável do Porto, reforçando a sua presença no panorama turístico 
+            internacional, nomeadamente, por esta forte associação a eventos 
+            únicos e diferenciadores do destino Porto.  
+        
+            - A festa só termina de madrugada e os mais resistentes encerram a noite 
+            percorrendo a marginal, desde a Ribeira até à Foz do Douro, onde 
+            aguardam pelo nascer do sol. 
+        
+            - Embora tendo como auge a noite de 23 para 24 de junho, o programa 
+            oficial das Festas de São João estende-se por todo o mês de junho, 
+            contando com uma vasta agenda que integra múltiplas iniciativas de 
+            animação, que vão desde a música ao desporto, passando pelas 
+            tradicionais rusgas, arraiais e bailaricos. -->
+        
+        <festa nome="São João" categoria="festejo">
+            <patrono>
+                <nome idioma="Português">São João</nome>
+                <reconhecimento>
+                    <celebracao quatificacao="grau">
+                        <descricao>Muito celebrado</descricao>
+                    </celebracao>
+                    <localizacao idioma="Português">
+                        <local continente="Europa" />
+                    </localizacao>
+                </reconhecimento>
+            </patrono>
+            <festividades cidade="Porto">
+                <festividade>
+                    <importancia>
+                        <descricao>Nenhuma cidade festeja o São João como o Porto</descricao>
+                    </importancia>
+                </festividade>
+            </festividades>
+            <manifestacao tipo="popular">
+                <motivacao>
+                    <descricao>Arrasta multidões para a rua</descricao>
+                    <efeito acao="contagiar">
+                        <localizacao idioma="Português">
+                            <local cidade="Porto">Bairros</local>
+                            <local cidade="Porto">freguesias</local>
+                        </localizacao>
+                        <descricao acao="entusiasma">Todos quantos participam ou descricaoobrem pela primeira vez esta festa</descricao>
+                    </efeito>
+                </motivacao>
+            </manifestacao>
+            <caracteristicas>
+                <caracteristica genero="festa" definicao="unica" />
+                <caracteristica genero="festa" definicao="especiais" />
+                <caracteristica genero="programa" definicao="qualidade" />
+                <caracteristica genero="programa" definicao="diversidade" />
+            </caracteristicas>    
+            <particulariedade>
+                <descricao>As festas de São João do Porto são hoje um dos eventos âncora da cidade</descricao>
+                <marca caracteristica="indissociável">
+                    <localizacao idioma="Português">
+                        <local cidade="Porto" />
+                    </localizacao>
+                </marca>
+                <missao objetivo="reforçar a presença no panorama">
+                    <panorama>turístico internacional</panorama>
+                    <motivo>
+                        <descricao>Forte associação a eventos únicos e diferenciadores do destino Porto</descricao>
+                    </motivo>
+                </missao>
+            </particulariedade>
+            <horarios>
+                <horario fim="madrugada" />
+                <descricao>os mais resistentes encerram a noite percorrendo a marginal</descricao>
+            </horarios>
+            <percursos_festa>
+                <descricao>Aguardam na Foz do Douro pelo nascer do sol.</descricao>
+                <percurso inicio="Ribeira" fim="Foz" />
+            </percursos_festa>
+           <programa>
+                <datas>
+                    <data tipo="horário" genero="tradicional">noite</data>
+                    <data tipo="dia" periodo="início" genero="tradicional">23</data>
+                    <data tipo="mês" genero="tradicional">junho</data>
+                    <data tipo="dia" periodo="fim" genero="tradicional">24</data>
+                    <data tipo="mês" periodo="fim" genero="tradicional">junho</data>
+                    <data periodo="duração" genero="oficial">Todo mês de junho</data>
+                </datas>  
+                <agenda>
+                    <atividades tipo="animação" genero="tradicional">
+                        <atividade>
+                            musica
+                            desporto
+                            rusgas
+                            arraiais
+                            bailaricos
+                        </atividade>
+                    </atividades>
+                 </agenda>
+            </programa>             
+        </festa>
+        
+        
+        <!-- Vídeo -->
+        
+        <video titulo="Noite de São João no Porto">
+            <descricao>Mais informação em: www.portolazer.pt</descricao>
+            <fonte>https://youtu.be/wLpYzGPYpuE</fonte>
+        </video>
+        
+        
+        <!-- Texto utilizado: 
+            - Dos mais novos aos mais velhos, todos festejam o São João e são 
+            muitas as tradições associadas a este dia: desde lançar balões de ar 
+            quente, bater com martelos nas cabeças dos que passam, passar alho-
+            porro pela cara dos populares, saltar sobre as fogueiras, oferecer 
+            manjericos com quadras tradicionais ou assistir ao fogo de artifício 
+            sobre o rio Douro, onde todos se juntam à meia-noite para apreciar o 
+            espetáculo com a melhor vista sobre a cidade.
+        
+        
+            - Como manda a tradição, assam-se sardinhas em qualquer canto da 
+            cidade e por todo o lado há música e bailaricos a animar a noite.-->
+        
+        <tradicoes nome="São João" tipo="festa" genero="festejo">
+            <publicos>
+                <publico genero="alvo">mais novos</publico>
+                <publico genero="alvo">mais velhos</publico>
+            </publicos>
+            <tradicao> 
+                <atividade genero="lazer">Lançar balões de ar quente</atividade>
+                <atividade genero="lazer">Bater com martelos nas cabeças dos que passam</atividade>
+                <atividade genero="lazer">Passar alho-porro pela cara dos populares</atividade>
+                <atividade genero="lazer">Saltar sobre as fogueiras</atividade>
+                <atividade genero="lazer">Oferecer manjericos com quadras tradicionais</atividade>
+                <atividade genero="lazer">Bater com martelos nas cabeças dos que passam</atividade>
+                <atividade genero="lazer">Passar alho-porro pela cara dos populares</atividade>
+                <atividade genero="lazer">Saltar sobre as fogueiras</atividade>
+                <atividade genero="lazer">Oferecer manjericos com quadras tradicionais</atividade>
+                <atividade genero="lazer">
+                    <descricao>Assistir ao fogo de artifício</descricao>
+                    <datas>
+                        <data tipo="horário">Meia-noite</data>
+                    </datas>
+                    <localizacao>
+                        <local>Rio Douro</local>
+                    </localizacao>
+                </atividade>
+                <atividade genero="lazer">
+                    <descricao>Assam-se sardinhas</descricao>
+                    <local>Qualquer canto da cidade</local>
+                </atividade>
+                <atividade genero="música">
+                    <descricao>Música e bailaricos</descricao>
+                    <localizacao>
+                        <local>Todo o lado</local>
+                    </localizacao>
+                    <datas>
+                        <data tipo="hórario" periodo="duração">noite</data>
+                    </datas>
+                </atividade>
+            </tradicao>
+        </tradicoes>
+        
+        
+        <!-- Texto utilizado:
+            - Com origem no século XIV, o São João era inicialmente uma festa pagã, 
+            de adoração ao Deus do Sol, em comemoração das colheitas e da 
+            abundância. Mais tarde, à semelhança do que sucedeu com o Entrudo, a 
+            Igreja cristianizou esta festa pagã, celebrando o nascimento de São 
+            João Batista no dia 24 de Junho.
+        
+            - Mas a festa do São João do Porto tem origem no solstício de Junho. 
+            Fazia parte do ritual dessa festa pagã a compra de um alho-porro, 
+            que era depois pendurado na principal parede da casa para dar sorte e 
+            fortuna, ali ficando até ser substituído por outro no ano seguinte. 
+        
+            - Na noite de 23 de junho, grupos de famílias saíam dos bairros a pé com 
+            destino às Fontainhas para verem a cascata do São João e compravam 
+            pelo caminho aos lavradores não só o tradicional alho-porro, mas ainda 
+            outros vegetais simbólicos, como vasos de manjerico e ramos de 
+            cidreira e de cravos. -->
+        
+        <historia nome="São João" tipo="festa">
+            <datas> 
+                <data tipo="século">XIV</data>
+                <data tipo="mês">junho</data>
+                <data tipo="época">solstício</data>
+            </datas>
+            <festas periodo="início">
+                <festa periodo="início">Festa Pagã</festa>
+                <adoracao tipo="divindade" genero="Deus" idioma="Português">Deus do Sol</adoracao>
+                <comemoracoes>
+                    <comemoracao>colheitas</comemoracao>
+                    <comemoracao>abundância</comemoracao>
+                </comemoracoes>
+                <ritual>
+                    <compra>
+                        <item tipo="vegetal tradicional" quantidade="1">
+                            <vegetal>Alho-porro</vegetal>
+                            <descricao>Pendurar na principal parede da casa para dar sorte e fortuna, ali ficando até ser substituído por outro no ano seguinte</descricao>
+                        </item>
+                    </compra>
+                </ritual>
+            </festas>
+            <festas periodo="atual">
+                <descricao>Semelhante ao que sucedeu com o Entrudo a Igreja cristianizou esta festa pagã</descricao>
+                <nascimento tipo="celebração">
+                    <nome idioma="Português">São João Batista</nome>
+                    <datas>
+                       <data tipo="dia">24</data>
+                        <data tipo="mês">junho</data> 
+                    </datas>
+                </nascimento>
+            </festas>
+            <caminhada destino="Fontainhas">
+                <datas>
+                    <data tipo="horário">noite</data>
+                    <data tipo="dia">23</data>
+                    <data tipo="mês">junho</data>
+                </datas>
+                <publicos>
+                    <publico participantes="grupos de familias"/>
+                </publicos>
+                <percursos_historia>
+                    <percurso>
+                        <local tipo="de partida">bairros</local>
+                        <meio>a pé</meio>
+                    </percurso>
+                    <objetivo>
+                        <observar>Cascata do São João</observar>
+                    </objetivo>
+                    <compra local="pelo caminho" vendedor="lavradores">
+                        <item tipo="vegetal tradicional">Alho-porro</item>
+                        <item tipo="vegetal simbólico" recipiente="vasos">Manjerico</item> 
+                        <item tipo="vegetal simbólico" recipiente="ramos">Cidreira</item>
+                        <item tipo="vegetal simbólico" recipiente="ramos">Cravos</item>
+                    </compra>
+                </percursos_historia>
+            </caminhada>            
+        </historia>
+        
+        
+        <!-- Texto utilizado: 
+            - Os festejos de São João na cidade do Porto são já seculares, mas foi só 
+            no século XX que o 24 de junho passou a ser feriado municipal na 
+            Invicta, proporcionando um merecido dia de folia a milhares de tripeiros.
+        
+            - A primeira alusão aos festejos populares data já do século XIV, pela mão 
+            do famoso cronista do reino, Fernão Lopes. Em 1851, os jornais 
+            relatavam a presença de cerca de 25 mil pessoas nos festejos 
+            sanjoaninos entre os Clérigos e a Rua de Santo António e, em 1910, um 
+            concurso hípico integrado nos festejos motivou a presença do infante D. 
+            Afonso. -->
+        
+        <festejos nome="Populares">
+            <feriado nome="São João">
+                <datas>
+                    <data tipo="dia">24</data>
+                    <data tipo="mês">junho</data>    
+                </datas>
+                <festejo>
+                    <descricao>Os festejos de São João na cidade do Porto são já seculares</descricao>
+                    <reconhecimento>
+                        <datas tipo="século">
+                            <seculo>XX</seculo>
+                        </datas>
+                    </reconhecimento>
+                </festejo>
+                <finalidade>
+                    <descricao>Oferecer um merecido dia de folia a milhares de tripeiros.</descricao>
+                </finalidade>
+            </feriado>
+            <primeira_alusao nome="Festejos Populares">
+                <datas tipo="século">
+                    <seculo>XIV</seculo>
+                </datas>
+                <autoria>
+                    <nome idioma="Português">Fernão Lopes</nome>
+                    <cargo>Cronista</cargo>
+                </autoria>
+                <jornais>
+                    <datas tipo="ano">
+                        <ano>1851</ano>    
+                    </datas>
+                    <relatam>
+                        <presença>
+                            <publico tipo="quantidade">25 mil</publico>
+                            <evento>
+                                <festejo idioma="Português">Sanjoaninos</festejo>
+                                <locais>
+                                    <local rua="Clérigos" />
+                                    <local rua="Santo António" />
+                                </locais>
+                            </evento>
+                        </presença>
+                    </relatam>
+                </jornais>
+                <concurso nome="hípico integrado">
+                    <datas tipo="ano">
+                        <ano>1910</ano>
+                    </datas>
+                    <descricao>Motivou a presença do infante D.Afonso.</descricao>
+                </concurso> 
+            </primeira_alusao>     
+        </festejos>
+
+        
+        <!-- Galeria Festa -->
+        
+        <galeria_festa>
+            <imagem>
+                <descricao>Imagem 1</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/agora/8/files/47/mno-balao-sao-joao.jpg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 2</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/agora/8/files/1601629416-UnR2ekBF39.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 3</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/agora/8/files/1601629417-V5LUC4b4xS.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 4</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601629495-4QB4Rclpa9.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 5</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601629620-42f2HvvzwE.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 6</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601629620-ACbJBGUfn0.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 7</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601629623-qnaauvjuNa.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 8</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601629624-yuNTsaZc7X.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 9</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601629625-O0dlpTZOco.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 10</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601629626-ACtzdXBhUA.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 11</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601629729-VdSTkxgzIG.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 12</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601629730-YKorPf2tZc.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 13</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601629800-IJYGEKUMP4.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 14</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601629801-9MPTsaTosv.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 15</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601629801-SiCL6vdJ83.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 16</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601629892-ImU65jzGnw.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 17</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601629892-uBLGyPtZzO.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 18</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601629893-F2ivInTOCy.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 19</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601629893-YmpfsyWBTq.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 20</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601629894-RLgeS22zxf.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 21</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601630006-Cgl7vCUoPQ.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 22</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601630007-zLgBvWlG57.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+        </galeria_festa>
+
+    </festividade> 
+    
+    <!-- Começa página Verão no Porto -->
+
+    <estacao nome="Verão" cidade="Porto"> 
+        
+        <!-- Imagem inicial -->
+        
+        <imagem_verao>
+            <descricao>Verão é no Porto</descricao>
+            <fonte>https://www.agoraporto.pt/files/uploads/cms/agora/8/files/48/jq-20julho-electrico-01.jpg</fonte>
+            <largura unidade="px">1160</largura>
+            <altura unidade="px">773</altura>
+        </imagem_verao>
+        
+        
+        <!-- Texto utilizado: 
+            - Uma iniciativa que assegura a dinâmica e diversidade da oferta no Porto 
+            durante os meses de julho, agosto e setembro, procurando dar resposta 
+            efetiva às necessidades e aspirações dos vários públicos que vivem ou 
+            visitam a cidade durante o período de verão. -->
+        
+        <iniciativa estacao="verão">
+            <datas tipo="meses"> 
+                <mes>julho</mes>
+                <mes>agosto</mes>
+                <mes>setembro</mes>                
+            </datas>
+            <objetivos>
+                <objetivo>
+                    <descricao>dar resposta às necessidades e aspirações</descricao>
+                    <publicos tipo="vários">
+                        <publico>
+                            <tipo>residente</tipo>
+                            <tipo>visitante</tipo>    
+                        </publico>
+                    </publicos>   
+                </objetivo>
+            </objetivos>
+            <finalidade>
+                <descricao>Assegurar a dinâmica e diversidade da oferta no Porto</descricao>
+            </finalidade>
+        </iniciativa>
+        
+        
+        <!-- Texto utilizado:
+            - O sucesso desta estratégia de criação e concentração de momentos 
+            altos durante os meses de Verão tem vindo a ser comprovada pela 
+            dinâmica que já se instalou na cidade, traduzida em momentos de 
+            excelente adesão de um público cada vez mais informado e interessado. -->
+        
+        <estrategia tipo="criação e concentração de momentos">
+            <dinamica estacao="verão">
+                <descricao>tem vindo a ser comprovada pela dinâmica que já se instalou na cidade</descricao>
+                <publico adesao="excelente">
+                    <caracteristicas>
+                        <caracteristica>informado</caracteristica>
+                        <caracteristica>interessado</caracteristica>
+                    </caracteristicas>
+                </publico>
+            </dinamica>
+        </estrategia>
+        
+        
+        <!-- Vídeo -->
+        
+        <video titulo="Fim de semana de Verão é no Porto">
+            <descricao>Os fins de semana são o ponto alto do programa municipal Verão é no Porto. 
+                Esta é uma cidade para todas as estações, mas é no verão que mais transpira animação no seu espaço público.</descricao>
+            <fonte>https://youtu.be/gPHYcPTeUUU</fonte>
+        </video>
+        
+        
+        <!-- Texto utilizado:
+            - O programa Verão é no Porto, concentra uma grande variedade de 
+            iniciativas que convidam o público a percorrer e a viver a cidade em 
+            pleno, desde o início de julho até ao final de setembro, com espetáculos 
+            de música, dança e teatro de rua, cinema ao ar livre, mercados, feiras, 
+            provas desportivas, animação nas praias, atividades para os mais novos, 
+            entre muitas outras propostas ao ar livre, sempre com o Porto como palco privilegiado.  -->
+        
+        <programa cidade="Porto">
+            <iniciativas estacao="verão">
+                <descricao>convidam o público a percorrer e a viver a cidade em pleno</descricao>
+                <datas tipo="meses">
+                    <mes periodo="início">julho</mes>
+                    <mes periodo="fim">setembro</mes>
+                </datas>
+                <espetaculos tipo="ar livre" estilo="lazer">
+                    <espetaculo>música</espetaculo>
+                    <espetaculo>dança e teatro de rua</espetaculo>
+                    <espetaculo>cinema ao ar livre</espetaculo>
+                    <espetaculo>mercados</espetaculo>
+                    <espetaculo>feiras</espetaculo>
+                    <espetaculo>provas desportivas</espetaculo>
+                    <espetaculo>animação nas praias</espetaculo>
+                    <espetaculo>atividades para os mais novos</espetaculo>
+                </espetaculos>
+                <palco cidade="Porto">
+                    <descricao>Sempre com o Porto como palco privilegiado.</descricao>
+                </palco>
+            </iniciativas>
+        </programa>
+        
+        
+        <!-- Texto utilizado:
+            - Verão no Jardim, Cinema Fora do Sítio, Trengo - Festival de Circo do Porto, 
+            Porto Busker Fest, Porta Jazz ao Relento, Porto Beer Fest, 
+            Concertos na Avenida, Estádios de Praia, Missão Férias ou Baixa em Boa 
+            Forma são apenas algumas das muitas iniciativas que integram a longa 
+            oferta de verão na cidade do Porto. -->
+        
+        <oferta cidade="Porto"> 
+            <iniciativas tipo="ar livre" estacao="verão">
+                <festa estilo="lazer">Verão no Jardim</festa>
+                <festa estilo="cinema">Cinema Fora do Sítio</festa>
+                <festa estilo="festival">Trengo - Festival de Circo do Porto</festa>
+                <festa estilo="musica">Porto Busker Fest</festa>
+                <festa estilo="festival">Porto Beer Fest</festa>
+                <festa estilo="musica">Porta Jazz ao Relento</festa>
+                <festa estilo="musica">Concertos na Avenida</festa>
+                <festa estilo="desporto">Estádios de Praia</festa>
+                <festa estilo="lazer"> Missão Férias ou Baixa em Boa Forma</festa>
+            </iniciativas>
+        </oferta>
+        
+        
+        <!-- Galeria Verão -->
+        
+        <galeria_verao>
+            <imagem>
+                <descricao>Imagem 1</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601631684-5jTuqUG4UQ.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 2</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601631685-BARDJdqPeG.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 3</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601631685-LzCjHb8uoT.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 4</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601631685-PZFV0jvjzx.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 5</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601631686-gOIL4TQehf.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 6</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601631686-zwt7R26ok3.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 7</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601631688-uKCSoX1neV.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 8</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601631784-IlpmMWohMT.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 9</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601631852-MO4HKSwxaT.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 10</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601631852-N1eEXPpWTL.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 11</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601631933-nm1cPZU4kC.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 12</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601631934-UcCy00Yjn6.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 13</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601632039-KIcB4X5cqA.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 14</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601632040-h7Rh3TgfDD.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 15</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601632183-A2kypEgDPN.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 16</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601632184-4EUdnSBAR6.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 17</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601632185-mgd3Nbkrr0.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 18</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601632186-voTCQdF1Sw.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 19</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601632317-Lpa9mqvQth.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 20</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601632317-hgfTk8Y4Ob.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 21</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601632419-F0nAK1UcMa.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 22</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601632420-7LBjK2iprR.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 23</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601632420-J74MMDv6XD.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 24</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601632421-9vlCeUzVaI.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 25</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601632421-aCFg4vpwJV.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 26</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601632423-OpneCSFeMP.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 27</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601632540-W17vrXK2ZC.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 28</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601632627-MX2OF0LWu7.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 29</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601632696-6KPS7xGJvR.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 30</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601632696-Yx9F8xVgd1.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 31</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601632771-Ct4Spwe9vf.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 32</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601632771-zqO8UwXAcf.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 33</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601632916-0uQlZYiUyp.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 34</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601632916-otnJQGBKma.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 35</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601633006-f3pYaAYtHr.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 36</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601633007-A9taTAjQKd.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 37</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601633007-GlC3t7VkJX.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 38</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/agora/8/files/1601631504-11zHuT481G.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+            <imagem>
+                <descricao>Imagem 39</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/agora/8/files/1601631504-W3VxfWhyYV.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>
+            </imagem>
+        </galeria_verao>
+              
+    </estacao>
+
+    <!-- Começa página Natal -->
+
+    <celebracoes nome="Natal e Passagem de Ano">
+        
+        <!-- Imagem inicial -->
+        
+        <imagem_natal>
+            <descricao>Natal e Passagem de Ano</descricao>
+            <fonte>https://www.agoraporto.pt/files/uploads/cms/agora/8/files/49/01-jq-02dezembro-2018-atvidades-natal-76.jpg</fonte>
+            <largura unidade="px">1160</largura>
+            <altura unidade="px">773</altura>
+        </imagem_natal>
+        
+        
+        <!-- Texto utilizado:
+            
+            Depois da notoriedade já alcançada pela festa maior da cidade - o São João - o Natal 
+            e, sobretudo, a Passagem de Ano permitem uma vez mais o reforço da marca Porto enquanto 
+            destino acolhedor e promotor de grandes eventos, completando assim a cadeia de valor 
+            do Melhor Destino Europeu em 2012, 2014 e 2018.
+            
+            Nesta quadra, as ruas iluminam-se e a cidade ganha novas cores e um ambiente ainda 
+            mais quente e acolhedor.-->
+        
+        <festas_principais>
+            <descricao>Depois da notoriedade já alcançada pela festa maior da cidade - o São João - o Natal e, sobretudo, a Passagem de Ano</descricao>
+            <destino cidade="Porto">
+                <caracterizacao>
+                    <descricao>destino acolhedor e promotor de grandes eventos</descricao>
+                </caracterizacao>
+                <reconhecimento_cidade>
+                    <premio nome="Melhor Destino Europeu">
+                        <datas tipo="anos">
+                            <ano>2012</ano>
+                            <ano>2014</ano>
+                            <ano>2018</ano>
+                        </datas>
+                    </premio>
+                </reconhecimento_cidade>
+                <cidade epoca="Natal">
+                    <descricao>Nesta quadra, as ruas iluminam-se e a cidade ganha novas cores e um ambiente ainda mais quente e acolhedor.</descricao>
+                </cidade>
+            </destino>
+        </festas_principais>
+        
+        
+        <!-- Vídeo -->
+        
+        <video titulo="Natal no Porto 2018">
+            <descricao>Resumo da programação de Natal no Porto em 2018. </descricao>
+            <fonte>https://youtu.be/GHfAblcA928</fonte>
+        </video>
+        
+        
+        <!-- Texto utilizado: 
+        
+            Por todo o lado, o Porto fervilha de atividade, com as mais variadas 
+            experiências para viver em família. Feiras, mercados, concertos, 
+            espetáculos de dança, teatro, oficinas, exposições, atividades 
+            para crianças, diversões, pistas de gelo e muita animação de 
+            rua marcam o ritmo da cidade ao longo desta época festiva.
+
+            Até ao Dia de Reis, são cinco semanas repletas de animação, 
+            tradição e experiências únicas.
+
+            O auge destas celebrações coincide com a noite da Passagem 
+            de Ano, quando milhares de pessoas invadem a Baixa do Porto 
+            para assistir ao tradicional fogo-de-artifício.-->
+        
+        <celebracao tipo="principal" cidade="Porto" epoca="Natal" epicentro="Aliados">
+            <des>Por todo o lado, o Porto fervilha de atividade, com as mais variadas experiências para viver em família.</des>
+            <atividades_natalicias tipo="lazer">
+                <atividade>feiras</atividade>
+                <atividade>mercados</atividade>
+                <atividade>concertos</atividade>
+                <atividade>espetáculos de dança</atividade>
+                <atividade>teatro</atividade>
+                <atividade>oficinas</atividade>
+                <atividade>exposições</atividade>
+                <atividade>atividades para crianças</atividade>
+                <atividade>diversões</atividade>
+                <atividade>pistas de gelo</atividade>
+            </atividades_natalicias>
+            <ambiente>
+                <descricao>muita animação de rua marcam o ritmo da cidade ao longo desta época festiva.</descricao>
+            </ambiente>
+            <duracao valor="5" tipo="semanas" final="Dia de Reis"/>
+            <festa_principal festa="Passagem de Ano">
+                <descricao>Quando milhares de pessoas invadem a Baixa do Porto para assistir ao tradicional fogo-de-artifício.</descricao>
+                <espaco tipo="principal">
+                    <localizacao>
+                        <local>Aliados</local>
+                    </localizacao>
+                    <descricao>São o epicentro desta grande festa que enche por completo a principal sala de visitas da cidade.</descricao>
+                </espaco>
+            </festa_principal>
+        </celebracao>  
+        
+        
+        <!-- Vídeo -->
+        
+        <video titulo="Passagem de Ano 2018/2019 no Porto">
+            <descricao>A despedida do ano de 2018 trouxe aos Aliados um grandioso espetáculo de fogo de artifício e um concerto memorável de Pedro Abrunhosa, com mais de 200 mil pessoas.</descricao>
+            <fonte>https://youtu.be/9ppdPBLkQ6s</fonte>
+        </video>    
+        
+        
+        <!-- Galeria Natal -->
+        
+        <galeria_natal>
+            <imagem>
+                <descricao>Imagem 1</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/agora/8/files/1601630193-f4YTyPbLdS.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>         
+            </imagem>
+            <imagem>
+                <descricao>Imagem 2</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/agora/8/files/1601630193-hhO0Yidr8F.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>    
+            </imagem>
+            <imagem>
+                <descricao>Imagem 3</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/agora/8/files/1601630193-swKnVg8JFU.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>   
+            </imagem>
+            <imagem>
+                <descricao>Imagem 4</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/agora/8/files/1601630194-YU0QdujfME.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>    
+            </imagem>
+            <imagem>
+                <descricao>Imagem 5</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/agora/8/files/1601630194-hz3NEnHa7Q.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura> 
+            </imagem>
+            <imagem>
+                <descricao>Imagem 6</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601630372-XRrD5bI8QJ.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>    
+            </imagem>
+            <imagem>
+                <descricao>Imagem 7</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601630372-cfNWtLHrjN.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>    
+            </imagem>
+            <imagem>
+                <descricao>Imagem 8</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601630373-rl8fGkS6TM.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>   
+            </imagem>
+            <imagem>
+                <descricao>Imagem 9</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601630373-sd8X3b3K2K.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">774</altura>    
+            </imagem>
+            <imagem>
+                <descricao>Imagem 10</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601630374-ECVtP4mHeH.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>    
+            </imagem>
+            <imagem>
+                <descricao>Imagem 11</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601630456-T4m7mJ6UjG.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>    
+            </imagem>
+            <imagem>
+                <descricao>Imagem 12</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601630456-UgVPM2ghzU.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>    
+            </imagem>
+            <imagem>
+                <descricao>Imagem 13</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601630457-VuAhQ1Ac8w.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>    
+            </imagem>
+            <imagem>
+                <descricao>Imagem 14</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601630576-FbYvFsPMlG.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>   
+            </imagem>
+            <imagem>
+                <descricao>Imagem 15</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601630738-Qw715gBNoQ.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>  
+            </imagem>
+            <imagem>
+                <descricao>Imagem 16</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601630738-Z37cw9DvlK.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>   
+            </imagem>
+            <imagem>
+                <descricao>Imagem 17</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601630739-m9FhktAZmX.jpeg</fonte>
+                <largura unidade="px">1160</largura>
+                <altura unidade="px">773</altura>   
+            </imagem>
+            <imagem>
+                <descricao>Imagem 18</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601630740-2B0poD1nXP.jpeg</fonte>
+                <largura unidade="px">1159</largura>
+                <altura unidade="px">773</altura>  
+            </imagem>
+            <imagem>
+                <descricao>Imagem 19</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601630740-x1ecpbXWHx.jpeg</fonte>
+                <largura unidade="px">1159</largura>
+                <altura unidade="px">773</altura>  
+            </imagem>
+            <imagem>
+                <descricao>Imagem 20</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601630911-bgoxxiMKaH.jpeg</fonte>
+                <largura unidade="px">1159</largura>
+                <altura unidade="px">773</altura>  
+            </imagem>
+            <imagem>
+                <descricao>Imagem 21</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601630979-QqV9fk89FW.jpeg</fonte>
+                <largura unidade="px">1159</largura>
+                <altura unidade="px">773</altura>  
+            </imagem>
+            <imagem>
+                <descricao>Imagem 22</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601631111-HvzWmuWupB.jpeg</fonte>
+                <largura unidade="px">1159</largura>
+                <altura unidade="px">773</altura>  
+            </imagem>
+            <imagem>
+                <descricao>Imagem 23</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601631111-mK4E9Qmzj7.jpeg</fonte>
+                <largura unidade="px">1159</largura>
+                <altura unidade="px">773</altura>  
+            </imagem>
+            <imagem>
+                <descricao>Imagem 24</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601631112-6ywRJAHQer.jpeg</fonte>
+                <largura unidade="px">1159</largura>
+                <altura unidade="px">773</altura>  
+            </imagem>
+            <imagem>
+                <descricao>Imagem 25</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601631113-0PL39rA3Q8.jpeg</fonte>
+                <largura unidade="px">1159</largura>
+                <altura unidade="px">773</altura>  
+            </imagem>
+            <imagem>
+                <descricao>Imagem 26</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601631113-X2zyVxpyZr.jpeg</fonte>
+                <largura unidade="px">1159</largura>
+                <altura unidade="px">773</altura>  
+            </imagem>
+            <imagem>
+                <descricao>Imagem 27</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601631114-dwua83riR2.jpeg</fonte>
+                <largura unidade="px">1159</largura>
+                <altura unidade="px">773</altura>  
+            </imagem>
+            <imagem>
+                <descricao>Imagem 28</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601631206-S56p3pF9xo.jpeg</fonte>
+                <largura unidade="px">1159</largura>
+                <altura unidade="px">773</altura>  
+            </imagem>
+            <imagem>
+                <descricao>Imagem 29</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601631273-2aybdQgAoK.jpeg</fonte>
+                <largura unidade="px">1159</largura>
+                <altura unidade="px">773</altura>  
+            </imagem>
+            <imagem>
+                <descricao>Imagem 30</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601631273-wfZQhoDHVR.jpeg</fonte>
+                <largura unidade="px">1159</largura>
+                <altura unidade="px">773</altura>  
+            </imagem>
+            <imagem>
+                <descricao>Imagem 31</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601631274-UwKYVCleFS.jpeg</fonte>
+                <largura unidade="px">1159</largura>
+                <altura unidade="px">773</altura>  
+            </imagem>
+            <imagem>
+                <descricao>Imagem 32</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601631274-zPLUeS9L2S.jpeg</fonte>
+                <largura unidade="px">1159</largura>
+                <altura unidade="px">773</altura>  
+            </imagem>
+            <imagem>
+                <descricao>Imagem 33</descricao>
+                <fonte>https://www.agoraporto.pt/files/uploads/cms/1601631371-dEd50XIO05.jpeg</fonte>
+                <largura unidade="px">1159</largura>
+                <altura unidade="px">773</altura>  
+            </imagem>
+        </galeria_natal>
+
+    </celebracoes>
+
+</animacao>

@@ -1,0 +1,1447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+
+    <xs:element name="animacao">
+        <xs:complexType>
+            <xs:sequence>
+                
+                <!-- Começa página Festa de São João -->
+                
+                <xs:element name="festividade">
+                    <xs:complexType>
+                        <xs:sequence>
+                            
+                            <!-- Imagem de inicio -->
+                            <xs:element name="imagem_festa">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="descricao" type="xs:string" />
+                                        <xs:element name="fonte">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string"> 
+                                                    <xs:pattern value="[hH][tT]{2}[pP][sS]?://[wW]{3}.*" /> 
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="largura">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:integer">
+                                                        <xs:attribute name="unidade" type="xs:string" />
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="altura">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:integer">
+                                                        <xs:attribute name="unidade" type="xs:string" />
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            
+                            <!-- Parágrafo festa -->
+                            
+                            <xs:element name="festa">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="patrono">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="nome">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute name="idioma" type="xs:string" use="required" />
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="reconhecimento">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="celebracao">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="descricao" type="xs:string" />
+                                                                        </xs:sequence>
+                                                                        <xs:attribute name="quatificacao" type="xs:string" use="required" />
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="localizacao">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="local">
+                                                                                <xs:complexType>
+                                                                                    <xs:simpleContent>
+                                                                                        <xs:extension base="xs:string">
+                                                                                            <xs:attribute name="continente">
+                                                                                                <xs:simpleType>
+                                                                                                    <xs:restriction base="xs:string">
+                                                                                                        <xs:pattern value="[A-Z][a-z]*" />
+                                                                                                    </xs:restriction>
+                                                                                                </xs:simpleType>
+                                                                                            </xs:attribute>
+                                                                                        </xs:extension>
+                                                                                    </xs:simpleContent>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                        <xs:attribute name="idioma" type="xs:string" use="required" />
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        
+                                        <xs:element name="festividades">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="festividade">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="importancia">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="descricao" type="xs:string" />
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence> 
+                                                <xs:attribute name="cidade">
+                                                    <xs:simpleType>
+                                                        <xs:restriction base="xs:string">
+                                                            <xs:pattern value="[A-Z][a-z]*" />
+                                                        </xs:restriction>
+                                                    </xs:simpleType>
+                                                </xs:attribute>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="manifestacao">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="motivacao">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="descricao" type="xs:string" />
+                                                                <xs:element name="efeito">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="localizacao">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element maxOccurs="unbounded" name="local">
+                                                                                            <xs:complexType>
+                                                                                                <xs:simpleContent>
+                                                                                                    <xs:extension base="xs:string">
+                                                                                                        <xs:attribute name="cidade">
+                                                                                                            <xs:simpleType>
+                                                                                                                <xs:restriction base="xs:string">
+                                                                                                                    <xs:pattern value="[A-Z][a-z]*" />
+                                                                                                                </xs:restriction>
+                                                                                                            </xs:simpleType>
+                                                                                                        </xs:attribute>
+                                                                                                    </xs:extension>
+                                                                                                </xs:simpleContent>
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
+                                                                                    </xs:sequence>
+                                                                                    <xs:attribute name="idioma" type="xs:string" use="required"></xs:attribute>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                            <xs:element name="descricao">
+                                                                                <xs:complexType>
+                                                                                    <xs:simpleContent>
+                                                                                        <xs:extension base="xs:string">
+                                                                                            <xs:attribute name="acao" type="xs:string" use="required" />
+                                                                                        </xs:extension>
+                                                                                    </xs:simpleContent>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                        <xs:attribute name="acao" type="xs:string" use="required" />
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="tipo" type="xs:string" use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="caracteristicas">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element maxOccurs="unbounded" name="caracteristica">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute name="genero" type="xs:string" use="required" />
+                                                                    <xs:attribute name="definicao" type="xs:string" use="required" />
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="particulariedade">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="descricao" type="xs:string" />
+                                                    <xs:element name="marca">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="localizacao">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="local">
+                                                                                <xs:complexType>
+                                                                                    <xs:simpleContent>
+                                                                                        <xs:extension base="xs:string">
+                                                                                            <xs:attribute name="cidade">
+                                                                                                <xs:simpleType>
+                                                                                                    <xs:restriction base="xs:string">
+                                                                                                        <xs:pattern value="[A-Z][a-z]*" />
+                                                                                                    </xs:restriction>
+                                                                                                </xs:simpleType>
+                                                                                            </xs:attribute>
+                                                                                        </xs:extension>
+                                                                                    </xs:simpleContent>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                        <xs:attribute name="idioma" type="xs:string" use="required" />
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="caracteristica" type="xs:string" use="required" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="missao">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="panorama" type="xs:string" />
+                                                                <xs:element name="motivo">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="descricao" type="xs:string" />
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="objetivo" type="xs:string" use="required" />
+                                                        </xs:complexType>
+                                                    </xs:element> 
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="horarios">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="horario" minOccurs="1">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute name="fim" type="xs:string" use="required" />
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="descricao" type="xs:string" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        
+                                        <xs:element name="percursos_festa">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="descricao" type="xs:string" />
+                                                    
+                                                    <xs:element maxOccurs="unbounded" name="percurso">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute name="inicio">
+                                                                        <xs:simpleType>
+                                                                            <xs:restriction base="xs:string">
+                                                                                <xs:pattern value="[A-Z][a-z]*" />
+                                                                            </xs:restriction>
+                                                                        </xs:simpleType>
+                                                                    </xs:attribute>
+                                                                    <xs:attribute name="fim">
+                                                                        <xs:simpleType>
+                                                                            <xs:restriction base="xs:string">
+                                                                                <xs:pattern value="[A-Z][a-z]*" />
+                                                                            </xs:restriction>
+                                                                        </xs:simpleType>
+                                                                    </xs:attribute>
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="programa">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="datas">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element maxOccurs="unbounded" name="data">
+                                                                    <xs:complexType>
+                                                                        <xs:simpleContent>
+                                                                            <xs:extension base="xs:string">
+                                                                                <xs:attribute name="tipo" type="xs:string" use="optional" />
+                                                                                <xs:attribute name="genero" type="xs:string" use="optional" />
+                                                                                <xs:attribute name="periodo" type="xs:string" use="optional" />
+                                                                            </xs:extension>
+                                                                        </xs:simpleContent>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="agenda">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="atividades">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element maxOccurs="unbounded" name="atividade">
+                                                                                <xs:simpleType>
+                                                                                    <xs:list itemType="xs:string"/>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                        <xs:attribute name="tipo" type="xs:string" use="required" />
+                                                                        <xs:attribute name="genero" type="xs:string" use="required" />
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="nome" type="xs:string" use="required" />
+                                    <xs:attribute name="categoria" type="xs:string" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                            
+                            <!-- Vídeo -->
+                            
+                            <xs:element name="video">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="descricao" type="xs:string" />
+                                        <xs:element name="fonte">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string"> 
+                                                    <xs:pattern value="[hH][tT]{2}[pP][sS]?://[a-zA-Z].*" /> 
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="titulo" type="xs:string" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                            
+                            <!-- Parágrafo Tradições -->
+                            
+                            <xs:element name="tradicoes">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="publicos">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element maxOccurs="unbounded" name="publico">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute name="genero" type="xs:string" use="optional" />
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="tradicao">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element maxOccurs="unbounded" name="atividade">
+                                                        <xs:complexType mixed="true">
+                                                            <xs:sequence minOccurs="0">
+                                                                <xs:choice maxOccurs="unbounded">
+                                                                    <xs:element name="descricao" type="xs:string" />
+                                                                    <xs:element name="local" type="xs:string" />
+                                                                    <xs:element name="datas">
+                                                                        <xs:complexType>
+                                                                            <xs:sequence>
+                                                                                <xs:element name="data">
+                                                                                    <xs:complexType>
+                                                                                        <xs:simpleContent>
+                                                                                            <xs:extension base="xs:string">
+                                                                                                <xs:attribute name="tipo" type="xs:string" use="required" />
+                                                                                                <xs:attribute name="periodo" type="xs:string" use="optional" />
+                                                                                            </xs:extension>
+                                                                                        </xs:simpleContent>
+                                                                                    </xs:complexType>
+                                                                                </xs:element>
+                                                                            </xs:sequence>
+                                                                        </xs:complexType>
+                                                                    </xs:element>
+                                                                    <xs:element name="localizacao">
+                                                                        <xs:complexType>
+                                                                            <xs:sequence>
+                                                                                <xs:element name="local" type="xs:string" />
+                                                                            </xs:sequence>
+                                                                        </xs:complexType>
+                                                                    </xs:element>
+                                                                </xs:choice>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="genero" type="xs:string" use="required" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="nome" type="xs:string" use="required" />
+                                    <xs:attribute name="tipo" type="xs:string" use="required" />
+                                    <xs:attribute name="genero" type="xs:string" use="optional" />
+                                </xs:complexType>
+                            </xs:element>
+                            
+                            <!-- Parágrafo História -->
+                            
+                            <xs:element name="historia">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="datas">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element maxOccurs="unbounded" name="data">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute name="tipo" type="xs:string" use="required" />
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element maxOccurs="unbounded" name="festas">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element minOccurs="0" name="descricao" type="xs:string" />
+                                                    <xs:element minOccurs="0" name="nascimento">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="nome">
+                                                                    <xs:complexType>
+                                                                        <xs:simpleContent>
+                                                                            <xs:extension base="xs:string">
+                                                                                <xs:attribute name="idioma" type="xs:string" use="required" />
+                                                                            </xs:extension>
+                                                                        </xs:simpleContent>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                
+                                                                <xs:element name="datas">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element maxOccurs="unbounded" name="data">
+                                                                                <xs:complexType>
+                                                                                    <xs:simpleContent>
+                                                                                        <xs:extension base="xs:string">
+                                                                                            <xs:attribute name="tipo" type="xs:string" use="required" />
+                                                                                        </xs:extension>
+                                                                                    </xs:simpleContent>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="tipo" type="xs:string" use="required" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element minOccurs="0" name="festa">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute name="periodo" type="xs:string" use="required" />
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element minOccurs="0" name="adoracao">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute name="tipo" type="xs:string" use="required" />
+                                                                    <xs:attribute name="genero" type="xs:string" use="optional" />
+                                                                    <xs:attribute name="idioma" type="xs:string" use="required" />
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    
+                                                    <xs:element minOccurs="0" name="comemoracoes">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element maxOccurs="unbounded" name="comemoracao" type="xs:string" />
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    
+                                                    <xs:element minOccurs="0" name="ritual">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="compra">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="item">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element name="vegetal" type="xs:string" />
+                                                                                        <xs:element name="descricao" type="xs:string" />
+                                                                                    </xs:sequence>
+                                                                                    <xs:attribute name="tipo" type="xs:string" use="required" />
+                                                                                    <xs:attribute name="quantidade" type="xs:unsignedByte" use="required" />
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="periodo" type="xs:string" use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="caminhada">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="datas">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element maxOccurs="unbounded" name="data">
+                                                                    <xs:complexType>
+                                                                        <xs:simpleContent>
+                                                                            <xs:extension base="xs:string">
+                                                                                <xs:attribute name="tipo" type="xs:string" use="required" />
+                                                                            </xs:extension>
+                                                                        </xs:simpleContent>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    
+                                                    <xs:element name="publicos">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="publico">
+                                                                    <xs:complexType>
+                                                                        <xs:simpleContent>
+                                                                            <xs:extension base="xs:string">
+                                                                                <xs:attribute name="participantes" type="xs:string" use="optional" />
+                                                                            </xs:extension>
+                                                                        </xs:simpleContent>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    
+                                                    <xs:element name="percursos_historia">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="percurso">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="local">
+                                                                                <xs:complexType>
+                                                                                    <xs:simpleContent>
+                                                                                        <xs:extension base="xs:string">
+                                                                                            <xs:attribute name="tipo" type="xs:string" use="required" />
+                                                                                        </xs:extension>
+                                                                                    </xs:simpleContent>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                            <xs:element name="meio" type="xs:string" />
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="objetivo">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="observar" type="xs:string" />
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="compra">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element maxOccurs="unbounded" name="item">
+                                                                                <xs:complexType>
+                                                                                    <xs:simpleContent>
+                                                                                        <xs:extension base="xs:string">
+                                                                                            <xs:attribute name="tipo" type="xs:string" use="required" />
+                                                                                            <xs:attribute name="recipiente" type="xs:string" use="optional" />
+                                                                                        </xs:extension>
+                                                                                    </xs:simpleContent>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                        <xs:attribute name="local" type="xs:string" use="required" />
+                                                                        <xs:attribute name="vendedor" type="xs:string" use="required" />
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="destino" type="xs:string" use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="nome" type="xs:string" use="required" />
+                                    <xs:attribute name="tipo" type="xs:string" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                            
+                            <!-- Parágrafo Festejos -->
+                            
+                            <xs:element name="festejos">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="feriado">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="datas">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element maxOccurs="unbounded" name="data">
+                                                                    <xs:complexType>
+                                                                        <xs:simpleContent>
+                                                                            <xs:extension base="xs:string">
+                                                                                <xs:attribute name="tipo" type="xs:string" use="required" />
+                                                                            </xs:extension>
+                                                                        </xs:simpleContent>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    
+                                                    <xs:element name="festejo">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="descricao" type="xs:string" />
+                                                                <xs:element name="reconhecimento">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="datas">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element name="seculo" maxOccurs="unbounded">
+                                                                                            <xs:simpleType>
+                                                                                                <xs:restriction base="xs:string">
+                                                                                                    <xs:pattern value="[A-Z]*" />
+                                                                                                </xs:restriction>
+                                                                                            </xs:simpleType>
+                                                                                        </xs:element>
+                                                                                    </xs:sequence>
+                                                                                    <xs:attribute name="tipo" type="xs:string" use="required" />
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    
+                                                    <xs:element name="finalidade">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="descricao" type="xs:string" />
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="nome" type="xs:string" use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                        
+                                        <xs:element name="primeira_alusao">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="datas">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="seculo" maxOccurs="unbounded">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                            <xs:pattern value="[A-Z]*" />
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="tipo" type="xs:string" use="required" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    
+                                                    <xs:element name="autoria">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="nome">
+                                                                    <xs:complexType>
+                                                                        <xs:simpleContent>
+                                                                            <xs:extension base="xs:string">
+                                                                                <xs:attribute name="idioma" type="xs:string" use="required" />
+                                                                            </xs:extension>
+                                                                        </xs:simpleContent>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="cargo" type="xs:string" />
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>    
+                                                    
+                                                    <xs:element name="jornais">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="datas">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="ano" maxOccurs="1">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:integer"> 
+                                                                                        <xs:pattern value="[1-9][0-9]{3}" />
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                        <xs:attribute name="tipo" type="xs:string" />
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                
+                                                                <xs:element name="relatam">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="presença">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element name="publico">
+                                                                                            <xs:complexType>
+                                                                                                <xs:simpleContent>
+                                                                                                    <xs:extension base="xs:string">
+                                                                                                        <xs:attribute name="tipo" type="xs:string" use="required" />
+                                                                                                    </xs:extension>
+                                                                                                </xs:simpleContent>
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
+                                                                                        
+                                                                                        <xs:element name="evento">
+                                                                                            <xs:complexType>
+                                                                                                <xs:sequence>
+                                                                                                    <xs:element name="festejo">
+                                                                                                        <xs:complexType>
+                                                                                                            <xs:simpleContent>
+                                                                                                                <xs:extension base="xs:string">
+                                                                                                                    <xs:attribute name="idioma" type="xs:string" use="required" />
+                                                                                                                </xs:extension>
+                                                                                                            </xs:simpleContent>
+                                                                                                        </xs:complexType>
+                                                                                                    </xs:element>
+                                                                                                    
+                                                                                                    <xs:element name="locais">
+                                                                                                        <xs:complexType>
+                                                                                                            <xs:sequence>
+                                                                                                                <xs:element maxOccurs="unbounded" name="local">
+                                                                                                                    <xs:complexType>
+                                                                                                                        <xs:simpleContent>
+                                                                                                                            <xs:extension base="xs:string">
+                                                                                                                                <xs:attribute name="rua" type="xs:string" use="required" />
+                                                                                                                            </xs:extension>
+                                                                                                                        </xs:simpleContent>
+                                                                                                                    </xs:complexType>
+                                                                                                                </xs:element>
+                                                                                                            </xs:sequence>
+                                                                                                        </xs:complexType>
+                                                                                                    </xs:element>
+                                                                                                </xs:sequence>
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
+                                                                                    </xs:sequence>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    
+                                                    <xs:element name="concurso">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="datas">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="ano" maxOccurs="1">
+                                                                                <xs:simpleType>
+                                                                                    <xs:restriction base="xs:integer"> 
+                                                                                        <xs:pattern value="[1-9][0-9]{3}" />
+                                                                                    </xs:restriction>
+                                                                                </xs:simpleType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                        <xs:attribute name="tipo" type="xs:string" use="required" />
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="descricao" type="xs:string" />
+                                                            </xs:sequence>
+                                                            <xs:attribute name="nome" type="xs:string" use="required" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    
+                                                </xs:sequence>
+                                                <xs:attribute name="nome" type="xs:string" use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="nome" type="xs:string" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                            
+                            <!-- Galeria das Festas -->
+                            
+                            <xs:element name="galeria_festa">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element maxOccurs="unbounded" name="imagem">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element minOccurs="1" name="descricao" type="xs:string" />
+                                                    <xs:element name="fonte">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string"> 
+                                                                <xs:pattern value="[hH][tT]{2}[pP][sS]?://[wW]{3}.*" /> 
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    
+                                                    <xs:element name="largura">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:integer">
+                                                                    <xs:attribute name="unidade" type="xs:string" />
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="altura">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:integer">
+                                                                    <xs:attribute name="unidade" type="xs:string" />
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            
+                        </xs:sequence>
+                        <xs:attribute name="nome" type="xs:string" use="required" />
+                    </xs:complexType>
+                </xs:element>
+               
+                <!-- Começa página Verão no Porto -->
+                
+                <xs:element name="estacao">
+                    <xs:complexType>
+                        <xs:sequence>
+                            
+                            <!-- Imagem de inicio -->
+                            <xs:element name="imagem_verao">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="descricao" type="xs:string" />
+                                        <xs:element name="fonte">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string"> 
+                                                    <xs:pattern value="[hH][tT]{2}[pP][sS]?://[wW]{3}.*" /> 
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="largura">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:integer">
+                                                        <xs:attribute name="unidade" type="xs:string" />
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="altura">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:integer">
+                                                        <xs:attribute name="unidade" type="xs:string" />
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            
+                            <!-- Parágrafo Iniciativa -->
+                            
+                            <xs:element name="iniciativa">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="datas">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="mes" maxOccurs="unbounded">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="julho"/>
+                                                                <xs:enumeration value="agosto"/>
+                                                                <xs:enumeration value="setembro"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="tipo" type="xs:string" use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="objetivos">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="objetivo">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="descricao" type="xs:string" />
+                                                                <xs:element name="publicos">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="publico">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element maxOccurs="unbounded" name="tipo" type="xs:string" />
+                                                                                    </xs:sequence>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                        <xs:attribute name="tipo" type="xs:string" use="required" />
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="finalidade">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="descricao" type="xs:string" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="estacao" type="xs:string" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                            
+                            <!-- Parágrafo estratégia -->
+                            
+                            <xs:element name="estrategia">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="dinamica">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="descricao" type="xs:string" />
+                                                    <xs:element name="publico">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="caracteristicas">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element maxOccurs="unbounded" name="caracteristica" type="xs:string" />
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="adesao" type="xs:string" use="required" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="estacao" type="xs:string" use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="tipo" type="xs:string" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                            
+                            <!-- Vídeo -->
+                            
+                            <xs:element name="video">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="descricao" type="xs:string" />
+                                        <xs:element name="fonte">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string"> 
+                                                    <xs:pattern value="[hH][tT]{2}[pP][sS]?://[a-zA-Z].*" /> 
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="titulo" type="xs:string" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                            
+                            <!-- Parágrafo Programa -->
+                            
+                            <xs:element name="programa">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="iniciativas">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="descricao" type="xs:string" />
+                                                    <xs:element name="datas">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element maxOccurs="unbounded" name="mes">
+                                                                    <xs:complexType>
+                                                                        <xs:simpleContent>
+                                                                            <xs:extension base="xs:string">
+                                                                                <xs:attribute name="periodo" type="xs:string" use="required" />
+                                                                            </xs:extension>
+                                                                        </xs:simpleContent>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="tipo" type="xs:string" use="required" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="espetaculos">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element maxOccurs="unbounded" name="espetaculo">
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="tipo" type="xs:string" use="required" />
+                                                            <xs:attribute name="estilo" type="xs:string" use="required" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="palco">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="descricao" type="xs:string" />
+                                                            </xs:sequence>
+                                                            <xs:attribute name="cidade">
+                                                                <xs:simpleType>
+                                                                    <xs:restriction base="xs:string">
+                                                                        <xs:pattern value="[A-Z][a-z]*" />
+                                                                    </xs:restriction>
+                                                                </xs:simpleType>
+                                                            </xs:attribute>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="estacao" type="xs:string" use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="cidade">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="[A-Z][a-z]*" />
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                            
+                            <!-- Parágrafo Oferta -->
+                            
+                            <xs:element name="oferta">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="iniciativas">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element maxOccurs="unbounded" name="festa">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute name="estilo" type="xs:string" use="required" />
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="tipo" type="xs:string" use="required" />
+                                                <xs:attribute name="estacao" type="xs:string" use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="cidade">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="[A-Z][a-z]*" />
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                            
+                            <!-- Galeria do Verão -->
+                            
+                            <xs:element name="galeria_verao">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element maxOccurs="unbounded" name="imagem">
+                                            <xs:complexType mixed="true">
+                                                <xs:sequence>
+                                                    <xs:element name="descricao" type="xs:string" />
+                                                    <xs:element name="fonte">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string"> 
+                                                                <xs:pattern value="[hH][tT]{2}[pP][sS]?://[wW]{3}.*" /> 
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="largura">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:integer">
+                                                                    <xs:attribute name="unidade" type="xs:string" />
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="altura">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:integer">
+                                                                    <xs:attribute name="unidade" type="xs:string" />
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            
+                        </xs:sequence>
+                        
+                        <xs:attribute name="nome" type="xs:string" use="required" />
+                        <xs:attribute name="cidade">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="[A-Z][a-z]*" />
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+                
+                <!-- Começa página Natal -->
+
+                <xs:element name="celebracoes">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:choice maxOccurs="unbounded">
+                                
+                                <!-- Imagem inicial -->
+                                
+                                <xs:element name="imagem_natal">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="descricao" type="xs:string" />
+                                            <xs:element name="fonte">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string"> 
+                                                        <xs:pattern value="[hH][tT]{2}[pP][sS]?://[wW]{3}.*" /> 
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:element>
+                                            <xs:element name="largura">
+                                                <xs:complexType>
+                                                    <xs:simpleContent>
+                                                        <xs:extension base="xs:integer">
+                                                            <xs:attribute name="unidade" type="xs:string" />
+                                                        </xs:extension>
+                                                    </xs:simpleContent>
+                                                </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="altura">
+                                                <xs:complexType>
+                                                    <xs:simpleContent>
+                                                        <xs:extension base="xs:integer">
+                                                            <xs:attribute name="unidade" type="xs:string" />
+                                                        </xs:extension>
+                                                    </xs:simpleContent>
+                                                </xs:complexType>
+                                            </xs:element>
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                                
+                                <!-- Parágrafo festas -->
+                                
+                                <xs:element name="festas_principais">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="descricao" type="xs:string" />
+                                            <xs:element name="destino">
+                                                <xs:complexType>
+                                                    <xs:sequence>
+                                                        <xs:element name="caracterizacao">
+                                                            <xs:complexType>
+                                                                <xs:sequence>
+                                                                    <xs:element name="descricao" type="xs:string" />
+                                                                </xs:sequence>
+                                                            </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="reconhecimento_cidade">
+                                                            <xs:complexType>
+                                                                <xs:sequence>
+                                                                    <xs:element name="premio">
+                                                                        <xs:complexType>
+                                                                            <xs:sequence>
+                                                                                <xs:element name="datas">
+                                                                                    <xs:complexType>
+                                                                                        <xs:sequence>
+                                                                                            <xs:element maxOccurs="unbounded" name="ano">
+                                                                                                <xs:simpleType>
+                                                                                                    <xs:restriction base="xs:string"> 
+                                                                                                        <xs:pattern value="[1-9][0-9]{3}" />
+                                                                                                    </xs:restriction>
+                                                                                                </xs:simpleType>
+                                                                                            </xs:element>
+                                                                                        </xs:sequence>
+                                                                                        <xs:attribute name="tipo" type="xs:string" use="required" />
+                                                                                    </xs:complexType>
+                                                                                </xs:element>
+                                                                            </xs:sequence>
+                                                                            <xs:attribute name="nome" type="xs:string" use="required" />
+                                                                        </xs:complexType>
+                                                                    </xs:element>
+                                                                </xs:sequence>
+                                                            </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="cidade">
+                                                            <xs:complexType>
+                                                                <xs:sequence>
+                                                                    <xs:element name="descricao" type="xs:string" />
+                                                                </xs:sequence>
+                                                                <xs:attribute name="epoca">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:string">
+                                                                            <xs:pattern value="[A-Z][a-z]*" />
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:attribute>
+                                                            </xs:complexType>
+                                                        </xs:element>
+                                                    </xs:sequence>
+                                                    <xs:attribute name="cidade">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:pattern value="[A-Z][a-z]*" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:attribute>
+                                                </xs:complexType>
+                                            </xs:element>
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                                
+                                <!-- Vídeo -->
+                                
+                                <xs:element name="video">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="descricao" type="xs:string" />
+                                            <xs:element name="fonte">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string"> 
+                                                        <xs:pattern value="[hH][tT]{2}[pP][sS]?://[a-zA-Z].*" /> 
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:element>
+                                        </xs:sequence>
+                                        <xs:attribute name="titulo" type="xs:string" use="required" />
+                                    </xs:complexType>
+                                </xs:element>
+                                
+                                <!-- Parágrafo Porto Natalicio -->
+                               
+                                <xs:element name="celebracao">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="des" type="xs:string" />
+                                            <xs:element name="atividades_natalicias">
+                                                <xs:complexType>
+                                                    <xs:sequence>
+                                                        <xs:element maxOccurs="unbounded" name="atividade">
+                                                        </xs:element>
+                                                    </xs:sequence>
+                                                    <xs:attribute name="tipo" type="xs:string" use="required" />
+                                                </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="ambiente">
+                                                <xs:complexType>
+                                                    <xs:sequence>
+                                                        <xs:element name="descricao" type="xs:string" />
+                                                    </xs:sequence>
+                                                </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="duracao">
+                                                <xs:complexType>
+                                                    <xs:attribute name="valor" type="xs:integer" use="required" />
+                                                    <xs:attribute name="tipo" type="xs:string" use="required" />
+                                                    <xs:attribute name="final" type="xs:string" use="required" />
+                                                </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="festa_principal">
+                                                <xs:complexType>
+                                                    <xs:sequence>
+                                                        <xs:element name="descricao" type="xs:string" />
+                                                        <xs:element name="espaco">
+                                                            <xs:complexType>
+                                                                <xs:sequence>
+                                                                    <xs:element name="localizacao">
+                                                                        <xs:complexType>
+                                                                            <xs:sequence>
+                                                                                <xs:element name="local" type="xs:string" />
+                                                                            </xs:sequence>
+                                                                        </xs:complexType>
+                                                                    </xs:element>
+                                                                    <xs:element name="descricao" type="xs:string" />
+                                                                </xs:sequence>
+                                                                <xs:attribute name="tipo" type="xs:string" use="required" />
+                                                            </xs:complexType>
+                                                        </xs:element>
+                                                    </xs:sequence>
+                                                    <xs:attribute name="festa" type="xs:string" use="required" />
+                                                </xs:complexType>
+                                            </xs:element>
+                                        </xs:sequence>
+                                        <xs:attribute name="tipo" type="xs:string" use="required" />
+                                        <xs:attribute name="cidade">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="[A-Z][a-z]*" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:attribute>
+                                        <xs:attribute name="epoca">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="[A-Z][a-z]*" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:attribute>
+                                        <xs:attribute name="epicentro" type="xs:string" use="required" />
+                                    </xs:complexType>
+                                </xs:element>
+                                
+                                
+                                <!-- Galeria Natal -->
+                                
+                                <xs:element name="galeria_natal">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element maxOccurs="unbounded" name="imagem">
+                                                <xs:complexType mixed="true">
+                                                    <xs:sequence>
+                                                        <xs:element name="descricao" type="xs:string" />
+                                                        <xs:element name="fonte">
+                                                            <xs:simpleType>
+                                                                <xs:restriction base="xs:string"> 
+                                                                    <!-- <xs:pattern value="https?://([^/:]+\.[a-zA-Z]{2,10}|([0-9]{1,3}\.){3}[0-9]{1,3})(:[0-9]+)?(/.*)?" /> -->
+                                                                    <xs:pattern value="[hH][tT]{2}[pP][sS]?://[wW]{3}.*" />
+                                                                </xs:restriction>
+                                                            </xs:simpleType>
+                                                        </xs:element>
+                                                        
+                                                        <xs:element name="largura">
+                                                            <xs:complexType>
+                                                                <xs:simpleContent>
+                                                                    <xs:extension base="xs:integer">
+                                                                        <xs:attribute name="unidade" type="xs:string" />
+                                                                    </xs:extension>
+                                                                </xs:simpleContent>
+                                                            </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="altura">
+                                                            <xs:complexType>
+                                                                <xs:simpleContent>
+                                                                    <xs:extension base="xs:integer">
+                                                                        <xs:attribute name="unidade" type="xs:string" />
+                                                                    </xs:extension>
+                                                                </xs:simpleContent>
+                                                            </xs:complexType>
+                                                        </xs:element>
+                                                    </xs:sequence>
+                                                </xs:complexType>
+                                            </xs:element>
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                                
+                                
+                            </xs:choice>
+                        </xs:sequence>
+                        <xs:attribute name="nome" type="xs:string" use="required" />
+                    </xs:complexType>
+                </xs:element>
+
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
